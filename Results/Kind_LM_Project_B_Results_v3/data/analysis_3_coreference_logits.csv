@@ -1,0 +1,46 @@
+checkpoint,probe_correct,probe_foil,prompt_snippet,logit_diff,above_chance
+10M,boy,girl,l to the girl . The ball belonged to the,0.14030027389526367,True
+10M,king,queen, to the queen . The ring belonged to the,1.0524826049804688,True
+10M,dog,cat,cat into the wood . The cat hid from the,0.16565370559692383,True
+10M,man,woman,d down the road . The woman waved at the,1.2621972560882568,True
+10M,milk,shoes,John went to the store . John bought,1.835364580154419,True
+10M,pet,hid,Mary saw the dog . Mary,0.9962366819381714,True
+10M,it,nothing,Tom read the book . Tom liked,4.053651809692383,True
+10M,it,them,Anna cooked dinner . Anna served,1.6738879680633545,True
+10M,home,work,Sam drove fast . Sam reached,0.6356766223907471,True
+20M,boy,girl,l to the girl . The ball belonged to the,0.04364347457885742,True
+20M,king,queen, to the queen . The ring belonged to the,1.1472506523132324,True
+20M,dog,cat,cat into the wood . The cat hid from the,0.3114023208618164,True
+20M,man,woman,d down the road . The woman waved at the,0.9477362632751465,True
+20M,milk,shoes,John went to the store . John bought,1.1232173442840576,True
+20M,pet,hid,Mary saw the dog . Mary,-0.2415372133255005,False
+20M,it,nothing,Tom read the book . Tom liked,3.3230109214782715,True
+20M,it,them,Anna cooked dinner . Anna served,0.13872909545898438,True
+20M,home,work,Sam drove fast . Sam reached,0.6439990997314453,True
+50M,boy,girl,l to the girl . The ball belonged to the,0.14942216873168945,True
+50M,king,queen, to the queen . The ring belonged to the,1.787083625793457,True
+50M,dog,cat,cat into the wood . The cat hid from the,-0.2936210632324219,False
+50M,man,woman,d down the road . The woman waved at the,0.649451732635498,True
+50M,milk,shoes,John went to the store . John bought,1.4860155582427979,True
+50M,pet,hid,Mary saw the dog . Mary,-3.556544065475464,False
+50M,it,nothing,Tom read the book . Tom liked,3.1951169967651367,True
+50M,it,them,Anna cooked dinner . Anna served,1.589592456817627,True
+50M,home,work,Sam drove fast . Sam reached,1.7887191772460938,True
+200M,boy,girl,l to the girl . The ball belonged to the,-0.9089841842651367,False
+200M,king,queen, to the queen . The ring belonged to the,0.5537519454956055,True
+200M,dog,cat,cat into the wood . The cat hid from the,-1.2139892578125,False
+200M,man,woman,d down the road . The woman waved at the,0.10608959197998047,True
+200M,milk,shoes,John went to the store . John bought,0.7335615158081055,True
+200M,pet,hid,Mary saw the dog . Mary,-3.3884005546569824,False
+200M,it,nothing,Tom read the book . Tom liked,5.605778694152832,True
+200M,it,them,Anna cooked dinner . Anna served,-0.39673709869384766,False
+200M,home,work,Sam drove fast . Sam reached,4.081880569458008,True
+1000M,boy,girl,l to the girl . The ball belonged to the,-1.2614336013793945,False
+1000M,king,queen, to the queen . The ring belonged to the,0.8103084564208984,True
+1000M,dog,cat,cat into the wood . The cat hid from the,-2.1583633422851562,False
+1000M,man,woman,d down the road . The woman waved at the,1.1942081451416016,True
+1000M,milk,shoes,John went to the store . John bought,-0.10988330841064453,False
+1000M,pet,hid,Mary saw the dog . Mary,-3.7748937606811523,False
+1000M,it,nothing,Tom read the book . Tom liked,4.807574272155762,True
+1000M,it,them,Anna cooked dinner . Anna served,1.3047504425048828,True
+1000M,home,work,Sam drove fast . Sam reached,4.409070014953613,True

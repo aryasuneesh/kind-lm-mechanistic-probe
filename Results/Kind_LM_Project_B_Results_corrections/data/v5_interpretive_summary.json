@@ -1,0 +1,48 @@
+{
+  "v5_key_findings": {
+    "1_L8H0_functional_phases": {
+      "phase1_uniform": "10M-20M: entropy ~2.6, attention spread uniformly",
+      "phase2_induction": "50M: entropy 2.12, attends to tokens after repeated 'the' (cat, wood)",
+      "phase3_structural": "200M+: entropy <0.75, concentrates on BOS and period tokens",
+      "implication": "L8H0 repurposes from induction to structural role during training"
+    },
+    "2_coreference_specialization": {
+      "finding": "Later models specialize: improve on simple continuations, degrade on cross-clause coreference",
+      "evidence": "dog/cat logit diff: +0.17 (10M) -> -2.16 (1000M). home/work: +0.64 -> +4.41",
+      "std_across_probes": "1.19 (10M) -> 2.82 (1000M)"
+    },
+    "3_L8H0_negative_mover": {
+      "finding": "L8H0 DLA goes from ~0 (10M) to -0.135 (1000M) on coreference",
+      "mechanism": "At 1000M, L8H0 attends to BOS/period, not induction targets",
+      "all_probes_negative": true
+    },
+    "4_entropy_transition_window": {
+      "finding": "60M and 100M fill the gap \u2014 smooth monotonic decrease, not phase transition",
+      "trajectory": {
+        "10M": 2.596,
+        "20M": 2.598,
+        "50M": 2.118,
+        "60M": 1.719,
+        "100M": 1.437,
+        "200M": 0.747,
+        "1000M": 0.339
+      }
+    },
+    "5_A8_null_result": {
+      "finding": "No correlation between L8H0 induction attention and reward (rho=-0.12, p=0.41)",
+      "explained_by": "L8H0 at 200M+PPO is structural, not induction"
+    },
+    "6_A6_diversity": {
+      "finding": "BLEU drops from 6.47 (10M) to ~2-3 (50M+), stabilizes. First-token entropy stable ~2.6-3.1",
+      "transition": "Output diversity stabilizes after 50M"
+    }
+  },
+  "methodology_improvements_over_v4": [
+    "A5 entropy: 20 diverse prompts instead of 1 (robust to prompt artifacts)",
+    "A3 bootstrap: proper resample across 9 probes (Efron 1979), not invalid token-trimming",
+    "DLA: ln_final correction + 4 probes averaged (Elhage et al. 2022)",
+    "A6: N=50 with seed=42 (v4 had N=20, no seed, inconsistent BLEU)",
+    "A8: induction-specific metric (repeated-token attention, not mean attention)",
+    "Llama3 scoring via transformers (vLLM deadlocks in Colab with pre-existing CUDA)"
+  ]
+}

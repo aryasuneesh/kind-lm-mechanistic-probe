@@ -1,0 +1,7 @@
+analysis,issue,fix,severity
+A6 (Story Diversity),"v4 BLEU 2.25-3.87 contradicts text (2.82-2.91). No seed, N=20.","Re-run N=50, seed=42 (Cell 5). Check if flat BLEU holds.",HIGH
+A5 (Entropy),60M and 100M missing — the key transition window.,Extended to 7 checkpoints (Cell 4).,MODERATE
+A3 (Coreference),"All claims are point estimates, no uncertainty.",Bootstrap 95% CIs (Cell 6).,MODERATE
+DLA,"Ran in v2, dropped in v3, paper says 'future work' — misleading.",Revived on dog/cat probe (Cell 7).,MODERATE
+A8 (NEW),PPO reward / L8H0 causal loop was untested.,Spearman correlation (Cell 8).,LOW-MODERATE
+A2 (PPO Delta),Only 50M/200M. 100M would test partial-circuit prediction.,Cannot extend — no PPO model at 100M. Flagged in limitations.,LOW

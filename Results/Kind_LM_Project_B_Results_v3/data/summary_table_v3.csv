@@ -1,0 +1,8 @@
+Checkpoint,Peak Induction Score (v3),KL Commit Layer (std),KL Commit Layer (tuned),Coref Logit Diff (mean),Attn Entropy (median),1st-Tok Entropy,Pairwise BLEU
+10M words,0.024,1,,1.313,2.568,2.207,2.83
+20M words,0.026,1,,0.826,2.437,2.718,2.82
+50M words,0.031,2,,0.755,2.048,2.649,2.90
+200M words,0.556,8,,0.575,1.919,2.524,2.87
+1000M words,0.611,10,,0.580,1.705,2.151,2.91
+50M+PPO (delta),Δmax=0.004  ↑62 ↓82 heads,n/a,n/a,n/a,n/a,n/a,n/a
+200M+PPO (delta),Δmax=0.017  ↑64 ↓80 heads,n/a,n/a,n/a,n/a,n/a,n/a

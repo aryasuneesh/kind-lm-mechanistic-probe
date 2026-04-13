@@ -1,0 +1,8 @@
+{
+  "reward_method": "Llama3-8B-Instruct (transformers, exact training prompts)",
+  "n_stories": 50,
+  "spearman_rho": -0.1179,
+  "spearman_p": 0.4147,
+  "pearson_r": -0.0747,
+  "pearson_p": 0.6062
+}

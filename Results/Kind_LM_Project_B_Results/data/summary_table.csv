@@ -1,0 +1,6 @@
+Checkpoint,Peak Induction Score,KL Commit Layer
+10M words,0.411,1
+50M words,0.450,2
+1000M words,0.799,10
+50M+PPO (delta),Δ max = 0.123,n/a
+200M+PPO (delta),Δ max = 0.039,n/a
